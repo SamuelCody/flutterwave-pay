@@ -13,7 +13,7 @@ function Login() {
     const username = userRef.current.value.toLowerCase();
     const password = passwordRef.current.value.toLowerCase();
 
-    if (username !== "sam" && password !== "1234") {
+    if (username !== "sam" || password !== "1234") {
       return alert.error("Invalid Login.");
     }
     window.location.replace("/payment");
